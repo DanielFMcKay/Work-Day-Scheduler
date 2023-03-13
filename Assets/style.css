@@ -44,6 +44,7 @@ textarea {
 .description {
   white-space: pre-wrap;
   color: black;
+  font-size: 1.2rem;
 }
 
 .time-block {
@@ -88,6 +89,13 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-.boldening {
-  font-size: 5 rem;
+#clear-scheduler-btn {
+  text-align: center;
+  color: var(--soft);
+  background-color: rgba(174, 103, 255, 0.863);
+  border-radius: 8px;
+  width: fit-content;
+  font-size: 2rem;
+  padding: 8px;
+  margin-top: 2rem;
 }

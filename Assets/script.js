@@ -20,139 +20,153 @@ console.log(currentHour);
 
 
 $(document).ready(function () {
-var saveButton = $('.saveBtn');
+  var saveButton = $('.saveBtn');
 
 
 
-saveButton.on('click', function () { 
-  var yourText = $(this).siblings(".description").val();
-  var hour = $(this).parent().attr("id");
-  localStorage.setItem(hour, yourText);
-  console.log("the hour is ");
-  console.log(hour);
-});
+  saveButton.on('click', function () {
+    var yourText = $(this).siblings(".description").val();
+    var hour = $(this).parent().attr("id");
+    localStorage.setItem(hour, yourText);
+    console.log("the hour is ");
+    console.log(hour);
+  });
 
-// this is the saved data reload function
-function renderTimeBlockTxt() {
-  for (var i = 9; i < 17; i++) {
-    $("#" + i + " .description").val(localStorage.getItem(i));
+  // this is the saved data reload function
+  function renderTimeBlockTxt() {
+    for (var i = 9; i < 17; i++) {
+      $("#" + i + " .description").val(localStorage.getItem(i));
+    }
   }
-}
 
-// calls the saved data reload function
-renderTimeBlockTxt();
+  // calls the saved data reload function
+  renderTimeBlockTxt();
 
 
-// an exercise in Ctrl + D and cut-&-pasting
-// checks each time block and assigns a color as needed
-const hour9 = $('#9');
-function colorHour9() {
-  if (currentHour < 9) {
-    hour9.addClass("future");
-  } else if (currentHour === 9) {
-    hour9.addClass("present");
-  } else if (currentHour > 9) {
-    hour9.addClass("past");
+  // an exercise in Ctrl + D and cut-&-pasting
+  // checks each time block and assigns a color as needed
+  const hour9 = $('#9');
+  function colorHour9() {
+    if (currentHour < 9) {
+      hour9.addClass("future");
+    } else if (currentHour === 9) {
+      hour9.addClass("present");
+    } else if (currentHour > 9) {
+      hour9.addClass("past");
+    }
   }
-}
-colorHour9();
+  colorHour9();
 
-const hour10 = $('#10');
-function colorHour10() {
-  if (currentHour < 10) {
-    hour10.addClass("future");
-  } else if (currentHour === 10) {
-    hour10.addClass("present");
-  } else if (currentHour > 10) {
-    hour10.addClass("past");
+  const hour10 = $('#10');
+  function colorHour10() {
+    if (currentHour < 10) {
+      hour10.addClass("future");
+    } else if (currentHour === 10) {
+      hour10.addClass("present");
+    } else if (currentHour > 10) {
+      hour10.addClass("past");
+    }
   }
-}
-colorHour10();
+  colorHour10();
 
-const hour11 = $('#11');
-function colorHour11() {
-  if (currentHour < 11) {
-    hour11.addClass("future");
-  } else if (currentHour === 11) {
-    hour11.addClass("present");
-  } else if (currentHour > 11) {
-    hour11.addClass("past");
+  const hour11 = $('#11');
+  function colorHour11() {
+    if (currentHour < 11) {
+      hour11.addClass("future");
+    } else if (currentHour === 11) {
+      hour11.addClass("present");
+    } else if (currentHour > 11) {
+      hour11.addClass("past");
+    }
   }
-}
-colorHour11();
+  colorHour11();
 
-const hour12 = $('#12');
-function colorHour12() {
-  if (currentHour < 12) {
-    hour12.addClass("future");
-  } else if (currentHour === 12) {
-    hour12.addClass("present");
-  } else if (currentHour > 12) {
-    hour12.addClass("past");
+  const hour12 = $('#12');
+  function colorHour12() {
+    if (currentHour < 12) {
+      hour12.addClass("future");
+    } else if (currentHour === 12) {
+      hour12.addClass("present");
+    } else if (currentHour > 12) {
+      hour12.addClass("past");
+    }
   }
-}
-colorHour12();
+  colorHour12();
 
-const hour13 = $('#13');
-function colorHour13() {
-  if (currentHour < 13) {
-    hour13.addClass("future");
-  } else if (currentHour === 13) {
-    hour13.addClass("present");
-  } else if (currentHour > 13) {
-    hour13.addClass("past");
+  const hour13 = $('#13');
+  function colorHour13() {
+    if (currentHour < 13) {
+      hour13.addClass("future");
+    } else if (currentHour === 13) {
+      hour13.addClass("present");
+    } else if (currentHour > 13) {
+      hour13.addClass("past");
+    }
   }
-}
-colorHour13();
+  colorHour13();
 
-const hour14 = $('#14');
-function colorHour14() {
-  if (currentHour < 14) {
-    hour14.addClass("future");
-  } else if (currentHour === 14) {
-    hour14.addClass("present");
-  } else if (currentHour > 14) {
-    hour14.addClass("past");
+  const hour14 = $('#14');
+  function colorHour14() {
+    if (currentHour < 14) {
+      hour14.addClass("future");
+    } else if (currentHour === 14) {
+      hour14.addClass("present");
+    } else if (currentHour > 14) {
+      hour14.addClass("past");
+    }
   }
-}
-colorHour14();
+  colorHour14();
 
 
-const hour15 = $('#15');
-function colorHour15() {
-  if (currentHour < 15) {
-    hour15.addClass("future");
-  } else if (currentHour === 15) {
-    hour15.addClass("present");
-  } else if (currentHour > 15) {
-    hour15.addClass("past");
+  const hour15 = $('#15');
+  function colorHour15() {
+    if (currentHour < 15) {
+      hour15.addClass("future");
+    } else if (currentHour === 15) {
+      hour15.addClass("present");
+    } else if (currentHour > 15) {
+      hour15.addClass("past");
+    }
   }
-}
-colorHour15();
+  colorHour15();
 
-const hour16 = $('#16');
-function colorHour16() {
-  if (currentHour < 16) {
-    hour16.addClass("future");
-  } else if (currentHour === 16) {
-    hour16.addClass("present");
-  } else if (currentHour > 16) {
-    hour16.addClass("past");
+  const hour16 = $('#16');
+  function colorHour16() {
+    if (currentHour < 16) {
+      hour16.addClass("future");
+    } else if (currentHour === 16) {
+      hour16.addClass("present");
+    } else if (currentHour > 16) {
+      hour16.addClass("past");
+    }
   }
-}
-colorHour16();
+  colorHour16();
 
-const hour17 = $('#17');
-function colorHour17() {
-  if (currentHour < 17) {
-    hour17.addClass("future");
-  } else if (currentHour === 17) {
-    hour17.addClass("present");
-  } else if (currentHour > 17) {
-    hour17.addClass("past");
+  const hour17 = $('#17');
+  function colorHour17() {
+    if (currentHour < 17) {
+      hour17.addClass("future");
+    } else if (currentHour === 17) {
+      hour17.addClass("present");
+    } else if (currentHour > 17) {
+      hour17.addClass("past");
+    }
   }
-}
-colorHour17();
+  colorHour17();
+
+  const clearSchedule = $("#clear-scheduler-btn");
+  // clear scheduler button added with a confirmation box
+  clearSchedule.on('click', function () {
+    var clearConfirm = confirm("You have selected to erase the scheduler including Local Storage. Click OK to confirm.")
+    if (!clearConfirm) {
+      return;
+    } else {
+      localStorage.clear();
+      location.reload();
+    }
+  });
+
+
 
 });
 
