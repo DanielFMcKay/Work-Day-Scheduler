@@ -1,0 +1,92 @@
+:root {
+  --daylight: rgb(240, 253, 255);
+  --soft: rgb(253, 253, 241);
+}
+
+html {
+  background-color: var(--daylight);
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: var(--daylight);
+
+}
+
+header {
+  background-color: var(--soft);
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+#currentDay {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#timetest {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding: 8px
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+}
+
+.row {
+  border-top: 1px solid white;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #f37b74;
+  color: white;
+}
+
+.future {
+  background-color: #93f393;
+  color: black;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.boldening {
+  font-size: 5 rem;
+}
