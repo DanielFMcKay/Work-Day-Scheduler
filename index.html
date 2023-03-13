@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+</head>
+<body>
+    <header>
+    <h1 class="Title";>Coding 101 Quiz</h1>
+  </header>
+      <h2 id="timer"></h2>
+      <section id="splash-field"></section>
+      <section id="times-up"></section><br>
+
+  <section id="start-page">
+        <p>Please answer the following four questions in the time alloted. You will get additional time for correct answers 
+          and lose time for incorrect answers. The quiz will end when you either finish or time runs out.</p><br>
+        <button onclick="quizStart()"  id="start-button">Press Start to Begin</button>
+  </section>
+    <section id="quiz-field">
+
+      <!-- <section id="question-field"><h2"></h2></section> -->
+
+      <!-- <section id="button-field"></section> -->
+           
+    </section>
+    
+    <!-- the divs with centering makes it easier to center these elements if I do any pretty styling with them -->
+    <section id="display-score"></section><br>
+    <div style="display: flex; justify-content: center;">
+    <section id="quiz-result"></section></div>
+
+   
+ 
+    <section style="display: flex; justify-content: center;">
+    <form id="enter-initials" method="POST">
+    <h1>Please Enter Your Initials:</h1>
+    <div style="display: flex; justify-content: center;">
+    <input type="text" id="initials" name="initials" placeholder="***" maxlength="3"/><br>
+    </div>
+    
+    <div style="display: flex; justify-content: center;">
+    <button id="enter-initials-btn">Submit Score</button>
+    </div>
+    </form>
+    </section><br>
+
+    <div style="display: flex; justify-content: center;">
+    <section id="final-buttons">
+     <button id="home-page-btn">Home Page</button>
+     <button id="clear-scores-btn">Clear Scores</button>
+    </section>
+    </div>
+    <section id="high-scores">Recent Scores
+    <ul id="scores-list"></ul></section>
+    <!-- append to this maybe? This is just a note to myself -->
+
+    <script src="Assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* CSS style elements file */
+:root {
+   --chill: rgb(196, 202, 250);
+
+
+
+}
+
+header {
+   background-color: var(--chill);
+   border: solid;
+   margin-top: 8px;
+   border-radius: 8px;
+}
+
+
+html {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   margin-left: 8%;
+   margin-right: 8%;
+}
+
+header h1 {
+   text-align: center;
+   font-size: 3.5rem;
+}
+
+body {
+    display: block;
+    margin: 0px;
+    background-color: rgb(226, 235, 241);
+  }
+
+
+#timer {
+   text-align: left;
+   font-size: 2rem;
+   padding-left: 10%;
+}
+
+#timer::before {
+   font-size: 1.8rem;
+   content: "Time Remaining: ";
+ }
+
+#start-page {
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    line-height: 1.6rem;
+    font-size: 1.4rem;   
+ }
+
+#start-button {
+   text-align: center;
+   border-radius: 25px;
+   box-shadow: rgb(27, 27, 27) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+     0px;
+   color: hsl(0, 0%, 100%);
+   background-color: rgb(0, 114, 70);
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: 1rem 2rem;
+   cursor: pointer;
+   font-size: 1.5rem;
+   line-height: 2rem;
+   width: fit-content;
+}
+
+
+#quiz-field {
+   padding-top: 4px;
+   padding-left: 10%;
+   padding-right: 10%;
+   font-size: 1.8rem;
+}
+
+#question-field {
+   justify-self: center;
+    background-color: white;
+    border: solid;
+/* curved corners are pretty */
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-left: 5%;
+    text-align: left;
+/* rem is nice in that it resizes for the browser, I'm trying to use it more */
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(58, 57, 56);
+    width: fit-content;
+    min-width: 60%;
+ }
+
+
+ #button-field {
+   display: flex;
+   flex-direction: column;
+    margin-left: 5%;
+    width: fit-content;
+    padding: 1rem;
+ }
+
+
+#btn-one,
+#btn-two,
+#btn-three,
+#btn-four {
+    text-align: left;
+    border-radius: 25px;
+    box-shadow: rgb(27, 27, 27) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+      0px;
+    color: hsl(0, 0%, 100%);
+    margin: 12px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: fit-content;
+    min-width: 4rem;
+ }
+
+
+ 
+ #btn-one {
+    background-color: rgb(0, 34, 184) ;
+ }
+ #btn-two {
+    background-color: rgb(0, 126, 88);
+ }
+ #btn-three {
+    background-color: rgb(152, 32, 221);
+ }
+ #btn-four {
+    background-color: rgb(194, 110, 14);
+ } 
+ 
+ #display-score {
+   font-size: 2rem;
+   color: black;
+   background-color: var(--chill);
+   border-radius: 6px;
+   width: fit-content;
+   min-width: 13.2rem;
+   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+   margin-left: 11%;
+   border-style: solid;
+   line-height: 4rem;
+ }
+ /* placeholder */
+
+ #quiz-result {
+    display: inline-block;
+    align-content: center;
+    color: black;
+    background-color: rgb(196, 202, 250);
+    border: solid;
+    border-radius: 6px;
+    padding: 6px;
+    width: fit-content;   
+    font-size: 2.5rem;
+ }
+
+ #splash-field {
+   color: rgb(82, 0, 121);
+   font-size: 4rem;
+   background-color: rgb(255, 255, 161);
+   width: fit-content;
+ }
+
+
+ #high-scores {
+   margin-top: 2rem;
+   color: black;
+   text-align: center;
+   font-size: 3rem;
+ }
+
+ #scores-list {
+   color: black;
+   font-size: 2.2rem;
+ }
+
+#enter-initials h1 {
+   color: black;
+   line-height: 3rem;
+   font-size: 2.5rem;
+   padding: 4px;
+   margin-bottom: 1.2rem;
+}
+
+
+ #initials {
+   color: black;
+   text-align: center;
+   border-radius: 8px;
+   line-height: 4.4rem;
+   font-size: 3.8rem;
+   width: 10rem;
+   background-color: rgba(255, 255, 255, 0.959);
+   border: dashed, black;
+   margin-bottom: 1.2rem;
+ }
+
+ #enter-initials-btn {
+   color: white;
+   border-radius: 8px;
+   background-color: rgb(46, 49, 216);
+   font-size: 2.5rem;
+   padding: 8px;
+   margin: 6px;
+ }
+
+ #final-buttons {
+   font-size: 2rem;
+   line-height: 3rem;
+   /* background-color: var(--chill); */
+   padding: 8px;
+   display: inline-block;
+   flex-wrap: wrap;
+ }
+ 
+ #home-page-btn {
+   color: black;
+   background-color: rgb(135, 173, 222);
+   border-radius: 6px;
+   width: fit-content;
+   font-size: 2rem;
+   padding: 6px;
+   
+ }
+
+ #clear-scores-btn {
+   color: rgb(56, 56, 56);
+   background-color: rgba(255, 255, 255, 0.863);
+   border-radius: 6px;
+   width: fit-content;
+   font-size: 2rem;
+   padding: 6px;
+ }
+
+ #display-high-scores {
+   color: black;
+   font-size: 2rem;
+ }
