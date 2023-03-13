@@ -12,6 +12,8 @@ In theory, can be used on weekends too if you're a schedule-aholic.
 
 * It also color codes and updates in real time whether an hour block is in the past, present, or future.
 
+* There is also a button to clear the field with a confirmation box.
+
 I believe that currently this assignment meets the criteria requested. I do think I can make the code prettier and may add to it, but at the moment I believe it is complete.
 
 Link to the live side: https://danielfmckay.github.io/Work-Day-Scheduler/
